@@ -1,0 +1,217 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding-left: 127px;
+  padding-right: 127px;
+  font-family: "Manrope";
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    column-gap: 24px;
+    padding-right: 100px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+      color: #ae02ff;
+      text-decoration: underline;
+    }
+  }
+  .header_logo {
+    display: flex;
+    align-items: center;
+
+    padding-left: 50px;
+    column-gap: 24px;
+  }
+}
+
+.intro_section {
+  padding-top: 150px;
+  .intro_left {
+    width: 383px;
+    p {
+      font-size: 28px;
+    }
+    h1 {
+      font-size: 56px;
+    }
+  }
+
+  .intro_ocean {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+  .intro_crab {
+    position: absolute;
+    left: 0;
+    top: 510px;
+  }
+}
+
+.about_section {
+  display: flex;
+  column-gap: 50px;
+  height: 500px;
+  margin-top: 400px;
+
+  .about_piece {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    row-gap: 20px;
+
+    border-radius: 30px;
+    background: linear-gradient(to bottom, blue, aquamarine);
+    &p {
+      width: 100px;
+    }
+    button {
+      border-radius: 30px;
+      background: linear-gradient(to bottom, #fdfbff, #2cfff2);
+    }
+  }
+}
+
+.grid_main {
+  padding-top: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.grid_section {
+  display: grid;
+  row-gap: 30px;
+  column-gap: 30px;
+
+  grid-template-columns: repeat(4, 185px);
+
+  grid-template-rows: repeat(4, 185px);
+
+  grid-template-areas:
+    "Crab Crab Octopus Octopus"
+    "Whale Whale Whale Fish"
+    "Whale Whale Whale Fish"
+    "Jellyfish MantaRay Lobster Shark";
+
+  .grid_cell {
+    display: flex;
+    background-color: #ae02ff;
+    border-radius: 20px;
+
+    position: relative;
+  }
+}
+
+.Crab {
+  grid-area: Crab;
+
+  img {
+    width: 70px;
+    height: 115px;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.Octopus {
+  grid-area: Octopus;
+  img {
+    width: 250px;
+    height: 170px;
+
+    position: absolute;
+    right: 0;
+  }
+}
+.Whale {
+  grid-area: Whale;
+  img{
+    width: 450px;
+    height: 233px;
+
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+  }
+}
+.Fish {
+  grid-area: Fish;
+  img{
+    width: 185px;
+    height: 130px;
+
+    position: absolute;
+    bottom: 50px;
+  }
+}
+.Jellyfish {
+  grid-area: Jellyfish;
+  img{
+    width: 79px;
+    height: 124px;
+
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+  }
+}
+.Mantaray {
+  grid-area: MantaRay;
+  img{
+    width: 96px;
+    height: 96px;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
+.Lobster {
+  grid-area: Lobster;
+  img{
+    width: 103px; 
+    height: 108px;
+
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+  }
+}
+.Shark {
+  grid-area: Shark;
+  img{
+    width: 119px;
+    height: 119px;
+
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+  }
+}
+
+.form_case{
+background: linear-gradient(down,red);
+
+  width: 600px;
+  height: 600px;
+}
